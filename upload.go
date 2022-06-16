@@ -247,6 +247,8 @@ func (pc *PartClient) complate() error {
 	w.WriteField("title", pc.Title)
 	w.WriteField("rule", pc.Rule)
 	w.WriteField("cat", pc.Cat)
+	w.WriteField("unaudit", fmt.Sprintf("%d", pc.UnAudit))
+	w.WriteField("ftp_user_id", fmt.Sprintf("%d", pc.FtpUserId))
 	w.WriteField("subcat", strings.Join(pc.Subcat, ","))
 	w.WriteField("actor", pc.Actor)
 	w.Close()
