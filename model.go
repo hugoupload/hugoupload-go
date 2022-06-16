@@ -36,4 +36,6 @@ type PartClient struct {
 	UploadId    int
 	NewFilename string
 	tp          int
+	UnAudit     int // 是否需要审核   0: 需要审核  1: 不需要审核
+	FtpUserId   int    // ftpuserid
 }
